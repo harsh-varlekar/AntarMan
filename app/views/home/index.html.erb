@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AntarMan AI</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="icon-size">
+      <i class="fa-solid fa-brain"></i> <strong>AntarMan AI</strong>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Resources</a>
+      <a href="#">Contact</a>
+    </nav>
+    <button class="btn">Get Started</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>24/7 AI Mental Health Support</h1>
+      <p>Access immediate, confidential support through our AI-powered chatbot. We're here to listen, guide, and connect you with resources whenever you need them.</p>
+      <button class="btn-primary">Start Chat Now</button>
+      <button class="btn-secondary">Learn More</button>
+    </div>
+    <%= image_tag("antarman_ai.png", alt: "Antarman AI Chat Interface", class: "hero-image") %>
+  </section>
+
+  <!-- Support Section -->
+  <section class="support-section">
+    <h2>How We Support You</h2>
+    <div class="support-cards">
+      <div class="card">
+        <div class="icon-size"><i class="fa-solid fa-clock"></i></div>
+        <h4>24/7 Availability</h4>
+        <p>Access support anytime, anywhere. Our AI is always here to listen and help.</p>
+      </div>
+      <div class="card">
+        <div class="icon-size"><i class="fa-solid fa-shield-halved"></i></div>
+        <h4>Private & Secure</h4>
+        <p>Your conversations are completely confidential and protected.</p>
+      </div>
+      <div class="card">
+        <div class="icon-size"><i class="fa-solid fa-headset"></i></div>
+        <h4>Personalized Support</h4>
+        <p>Receive tailored guidance based on your unique situation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chatbox Section -->
+  <section class="chatbox">
+    <div class="chat-header">
+      <%= image_tag("avatar.png", alt: "Antarman AI Chat Interface", class: "chat-avatar") %>
+      <div>
+        <p class="chatbot-name">AI Support Assistant</p>
+        <span class="chatbot-status">Online</span>
+      </div>
+    </div>
+
+    <p class="chat-message ai-message">Hello! I’m here to support you. How are you feeling today?</p>
+    <p class="chat-message user-message">I’ve been feeling overwhelmed lately…</p>
+    <p class="chat-message ai-message">I understand that feeling overwhelmed can be difficult. Would you like to talk more about what’s causing these feelings?</p>
+
+    <div class="input-box">
+      <input type="text" placeholder="Type your message..." />
+      <button>➤</button>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="cta-section">
+    <h2>Ready to Start Your Journey?</h2>
+    <p>Take the first step towards better mental health with our AI-powered support system.</p>
+    <button class="btn-secondary">Begin Chat Now</button>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div>
+      <strong>MindAI Support</strong>
+      <p>Supporting mental health through AI technology.</p>
+    </div>
+    <div>
+      <strong>Quick Links</strong>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">How it Works</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <strong>Support</strong>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+    <div>
+      <strong>Connect</strong>
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
