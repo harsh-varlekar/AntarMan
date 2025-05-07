@@ -82,4 +82,5 @@ production:
   <<: *default
   database: antar_man_production
   username: antar_man
-  password: <%= ENV["ANTAR_MAN_DATABASE_PASSWORD"] %>
+  password: <%= Rails.application.credentials.dig(:production, :db_password) %>
+  host: localhost
