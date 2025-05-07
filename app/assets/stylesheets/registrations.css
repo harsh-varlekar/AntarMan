@@ -1,0 +1,149 @@
+.mindchat-signup {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 2rem;
+  color: #000000; /* Dark blue from the image */
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  text-align: center;
+  color: #4a5568; /* Grayish blue from the image */
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.divider {
+  height: 1px;
+  background-color: #e2e8f0; /* Light gray divider from the image */
+  margin: 1.5rem 0;
+}
+
+.form-section {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 1rem;
+  color: #2d3748; /* Dark gray-blue from the image */
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px; /* Slightly more rounded corners */
+  font-size: 1rem;
+  background-color: #f8fafc; /* Very light gray background */
+}
+
+.form-input::placeholder {
+  color: #a0aec0; /* Light gray placeholder text */
+}
+
+.form-select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #4a5568;
+  background-color: #f8fafc;
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: #718096; /* Medium gray */
+  margin-top: 0.25rem;
+}
+
+.checkbox-section {
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label {
+  margin-left: 0.5rem;
+  color: #2d3748;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #000000; /* Dark blue button */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #000000; /* Slightly lighter blue on hover */
+}
+
+.login-link {
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #4a5568;
+}
+
+.login-link a {
+  color: #4a5568; /* Medium blue link color */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  gap: 1rem;
+}
+
+.feature {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+  background-color: #f8fafc; /* Light gray background */
+  border-radius: 6px;
+}
+
+.feature h4 {
+  color: #000000; /* Dark blue */
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.feature p {
+  color: #4a5568;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #718096;
+  font-size: 0.8rem;
+}
+
+.crisis-line {
+  color: #718096; /* Red color for crisis line */
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
