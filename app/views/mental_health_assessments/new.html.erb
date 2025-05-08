@@ -1,0 +1,84 @@
+<div class="assessment-container">
+  <div class="assessment-card">
+    <h1 class="assessment-title">Help Us Understand You Better</h1>
+    <p class="assessment-subtitle">Your responses will help us provide more personalized support</p>
+
+    <%= form_with(model: @mental_health_assessment, local: true) do |f| %>
+      <div class="form-group">
+        <%= f.label :age, class: "form-label" %>
+        <%= f.number_field :age, class: "form-input", min: 1, max: 120 %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :overwhelmed_frequency, "How often do you feel overwhelmed?", class: "form-label" %>
+        <%= f.select :overwhelmed_frequency, 
+            ['Rarely', 'Sometimes', 'Often', 'Almost Always'],
+            { include_blank: "Select frequency..." },
+            { class: "form-select" } %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :stress_causes, "What causes you stress? (Select all that apply)", class: "form-label" %>
+        <div class="checkbox-group">
+          <%= f.collection_check_boxes :stress_causes, 
+              ['Work/School', 'Relationships', 'Financial', 'Health', 'Family'], 
+              :to_s, :to_s do |b| %>
+            <div class="checkbox-option">
+              <%= b.check_box %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :symptoms, "What symptoms do you experience? (Select all that apply)", class: "form-label" %>
+        <div class="checkbox-group">
+          <%= f.collection_check_boxes :symptoms, 
+              ['Anxiety', 'Depression', 'Insomnia', 'Fatigue', 'Irritability'], 
+              :to_s, :to_s do |b| %>
+            <div class="checkbox-option">
+              <%= b.check_box %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :coping_methods, "How do you cope with stress? (Select all that apply)", class: "form-label" %>
+        <div class="checkbox-group">
+          <%= f.collection_check_boxes :coping_methods, 
+              ['Exercise', 'Meditation', 'Talking to friends', 'Therapy'], 
+              :to_s, :to_s do |b| %>
+            <div class="checkbox-option">
+              <%= b.check_box %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :support_preference, "What type of support would you prefer?", class: "form-label" %>
+        <%= f.select :support_preference, 
+            ['Professional help', 'Peer support', 'Self-help', 'Not sure'],
+            { include_blank: "Select preference..." },
+            { class: "form-select" } %>
+      </div>
+
+      <div class="form-actions">
+        <%= f.submit "Start My Journey →", class: "submit-button" %>
+      </div>
+    <% end %>
+
+    <div class="assessment-footer">
+      <p>© 2025 MindCare AI. All rights reserved.</p>
+      <div class="footer-links">
+        <%= link_to "Privacy Policy", '' %>
+        <%= link_to "Terms of Service", '' %>
+        <%= link_to "Contact Support", '' %>
+      </div>
+    </div>
+  </div>
+</div>
